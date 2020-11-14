@@ -57,7 +57,7 @@ This is the folder structure we set up for you:
 /src
   index.tsx       # EDIT THIS
 /test
-  blah.test.tsx   # EDIT THIS
+  send-box.spec.tsx   # EDIT THIS
 .gitignore
 package.json
 README.md         # EDIT THIS
@@ -101,7 +101,7 @@ if (__DEV__) {
 
 You can also choose to install and use [invariant](https://github.com/palmerhq/tsdx#invariant) and [warning](https://github.com/palmerhq/tsdx#warning) functions.
 
-## Module Formats
+## DiModule Formats
 
 CJS, ESModules, and UMD module formats are supported.
 
