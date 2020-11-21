@@ -1,7 +1,8 @@
-import {InjectionToken, InjectionTokensContainer} from '..';
+import { InjectionToken, InjectionTokensContainer } from '..';
 import { EmptyBox } from 'value-box-ts';
 import { InstancesContainer, UpdatableInstanceContainer } from './IoCContainer.interface';
 import { InstanceBox } from './InstanceBox';
+import { InstanceNotFoundInContainer } from '../../exceptions/InstanceNotFoundInContainer';
 
 export class IoCContainer implements InstancesContainer, UpdatableInstanceContainer {
   constructor(private instanceMap: Map<InjectionToken, InstanceBox>) {}
@@ -16,7 +17,9 @@ export class IoCContainer implements InstancesContainer, UpdatableInstanceContai
   }
 
   getInstance(token: InjectionToken): InstanceBox {
-    return this.instanceMap.get(token) ?? EmptyBox.get();
+    const res = this.instanceMap.get(token);
+    if (!res) InstanceNotFoundInContainer.throw(token);
+    return res;
   }
 
   immutableUpdate(key: InjectionToken, instanceBox: InstanceBox): IoCContainer {

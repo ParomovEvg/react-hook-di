@@ -1,6 +1,10 @@
 export class ConstructError<T = undefined> extends Error {
   readonly name = 'ConstructError';
-  constructor(message: string, public errorData: T) {
+  readonly errorData: T;
+  constructor(message: string);
+  constructor(message: string, errorData: T);
+  constructor(message: string, errorData?: any) {
     super(message);
+    this.errorData = errorData;
   }
 }

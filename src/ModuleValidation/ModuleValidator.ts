@@ -1,6 +1,6 @@
 import { MayFailBox, ResultBox } from 'value-box-ts';
 import { AbstractModuleValidationError } from './AbstractModuleValidationError';
-import { Module } from '..';
+import { Module } from '../di-system';
 
 export class ModuleValidator {
   constructor(private module: Module) {}

@@ -5,10 +5,10 @@ import {
   UpdatableInstanceContainer,
 } from '../IocContainer/IoCContainer.interface';
 import { InjectionTokensContainer, ProvidersContainer } from '..';
-import { InstanceReactiveContainer } from './InstancesFactory.interface';
+import { InstancesReactiveFactory } from './InstancesReactiveFactory.interface';
 import { IoCContainer } from '../IocContainer/IoCContainer';
 
-export class InstancesFactory implements InstanceReactiveContainer {
+export class InstancesFactory implements InstancesReactiveFactory {
   constructor(
     private providers: ReactiveInstanceFactory[],
     private ioCContainer: InstancesContainer & UpdatableInstanceContainer

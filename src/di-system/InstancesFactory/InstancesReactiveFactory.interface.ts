@@ -1,5 +1,5 @@
 import { InstancesContainer } from '../IocContainer/IoCContainer.interface';
 
-export interface InstanceReactiveContainer {
+export interface InstancesReactiveFactory {
   useInstancesContainer(): InstancesContainer;
 }

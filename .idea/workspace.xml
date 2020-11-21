@@ -23,9 +23,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fab72d19-50a6-4392-b131-76c694526420" name="Default Changelist" comment="add di-system core">
-      <change afterPath="$PROJECT_DIR$/src/di-system/di-system.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ModuleValidation/analizators/AvailableProvidersScanner.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InstancesContainerContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RenderValueBox/RenderValueBox.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/createIoCContainerProvider/IoCContainerProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/createIoCContainerProvider/ModuleValidationError.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/createIoCContainerProvider/createIoCContainerProvider.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/createIoCContainerProvider/createIoCContainerProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/injectInstances/TokensObject.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/injectInstances/injectInstances.spec.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/injectInstances/injectInstances.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useInstanceBox/useInstanceBox.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useInstanceBox/useInstanceBox.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useInstancesObjectBox/createTestInstancesContainer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useInstancesObjectBox/useInstancesObjectBox.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/useInstancesObjectBox/useInstancesObjectBox.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/InstanceNotFoundInContainer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/mapObject/mapObject.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/mapObject/mapObject.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/types/ValueOf.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/InstancesFactory/InstancesFactory.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/di-system/InstancesFactory/InstancesReactiveFactory.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/InstancesFactory/InstancesFactory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/di-system/InstancesFactory/InstancesFactory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/IocContainer/IoCContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/di-system/IocContainer/IoCContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/ModuleValidation/AbstractModuleValidationError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModuleValidation/AbstractModuleValidationError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/ModuleValidation/ModuleExportsValidator/ModuleExportsError.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/ModuleValidation/ModuleExportsValidator/ModuleExportsValidator.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/ModuleValidation/ModuleExportsValidator/ModuleExportsValidator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/ModuleValidation/ModuleValidator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModuleValidation/ModuleValidator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/ModuleValidation/__test__/ValidationRules.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModuleValidation/__test__/ValidationRules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/di-system/configureInstancesReactiveContainer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/di-system/configureInstancesReactiveContainer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/errors/ConstructError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/errors/ConstructError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +84,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/injectInstances" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,34 +94,34 @@
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/injectInstances" />
+      <recent name="$PROJECT_DIR$/src/components/useInstanceBox" />
+      <recent name="$PROJECT_DIR$/src/components/useInstancesObjectBox" />
+      <recent name="$PROJECT_DIR$/src/utils/mapObject" />
       <recent name="$PROJECT_DIR$/src/module/Provider/Implementations/__test__" />
-      <recent name="$PROJECT_DIR$/src/decorators/injectable" />
-      <recent name="$PROJECT_DIR$/src/module/MetadataScaner" />
-      <recent name="$PROJECT_DIR$/src/module/DiModule" />
-      <recent name="$PROJECT_DIR$/src/module/InstancesFactory/__test__" />
     </key>
     <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/src/components/createIoCContainerProvider/createIoCContainerProvider.ts" />
+      <recent name="$PROJECT_DIR$/src/components/InstancesContainerContext.ts" />
       <recent name="$PROJECT_DIR$/src/di-system/DiModule/DiModule.interface.ts" />
       <recent name="$PROJECT_DIR$/src/module/Provider/Implementations/__test__/getTestProviderBaseFactory.ts" />
       <recent name="$PROJECT_DIR$/src/module/Provider/Implementations/__test__/createTestMetadataService.ts" />
-      <recent name="$PROJECT_DIR$/src/module/IocContainer/IoCContainer.interface.ts" />
-      <recent name="$PROJECT_DIR$/src/module/Provider/Implementations/UseInstanceBox.type.ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/di-system/ModuleValidation/__test__" />
-      <recent name="$PROJECT_DIR$/src/di-system/MetadataValidation" />
-      <recent name="$PROJECT_DIR$/src/module" />
-      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/utils/mapObject" />
       <recent name="$PROJECT_DIR$/src/utils/types" />
+      <recent name="$PROJECT_DIR$/src/utils" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/components/useInstancesObjectBox" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.si-system">
+  <component name="RunManager" selected="Jest.mapObject">
     <configuration name="DiModule" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -117,6 +148,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="mapObject" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/utils/mapObject/mapObject.test.ts" />
+      <test-names>
+        <test-name value="mapObject" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="si-system" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -140,23 +184,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test:watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test:watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.mapObject" />
         <item itemvalue="Jest.si-system" />
         <item itemvalue="npm.test" />
         <item itemvalue="Jest.MetadataScanner" />
         <item itemvalue="Jest.DiModule" />
-        <item itemvalue="npm.test:watch" />
       </list>
     </recent_temporary>
   </component>
@@ -195,6 +229,8 @@
       <workItem from="1605306481473" duration="16255000" />
       <workItem from="1605364737723" duration="10828000" />
       <workItem from="1605385821270" duration="5173000" />
+      <workItem from="1605734812224" duration="11005000" />
+      <workItem from="1605909124553" duration="13801000" />
     </task>
     <task id="LOCAL-00001" summary="add di-system core">
       <created>1605386476647</created>
@@ -249,58 +285,59 @@
     </state>
     <state width="555" height="547" key="DebuggerActiveHint/0.0.1440.848@0.0.1440.848" timestamp="1604780207240" />
     <state width="833" height="888" key="DebuggerActiveHint/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604872817551" />
-    <state x="1497" y="595" width="523" height="482" key="FileChooserDialogImpl" timestamp="1605385395824">
-      <screen x="0" y="0" width="3840" height="2160" />
+    <state x="842" y="379" width="523" height="728" key="FileChooserDialogImpl" timestamp="1605737196628">
+      <screen x="0" y="0" width="2160" height="1376" />
     </state>
     <state x="561" y="234" key="FileChooserDialogImpl/0.0.1440.848@0.0.1440.848" timestamp="1604786587735" />
     <state x="748" y="560" key="FileChooserDialogImpl/0.0.1920.2030@0.0.1920.2030" timestamp="1604586997944" />
+    <state x="842" y="379" width="523" height="728" key="FileChooserDialogImpl/0.0.2160.1376@0.0.2160.1376" timestamp="1605737196628" />
     <state x="1497" y="974" key="FileChooserDialogImpl/0.0.3840.3536@0.0.3840.3536" timestamp="1605199773315" />
     <state x="748" y="298" key="FileChooserDialogImpl/233.1182.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1604351771255" />
     <state x="842" y="379" key="FileChooserDialogImpl/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604880855663" />
     <state x="1617" y="2754" width="636" height="723" key="FileChooserDialogImpl/775.2357.2160.1440/0.0.3840.2160@775.2357.2160.1440" timestamp="1604853219001" />
     <state x="842" y="379" key="FileChooserDialogImpl/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605351115478" />
-    <state x="1497" y="595" key="FileChooserDialogImpl/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605385395824" />
+    <state x="1497" y="595" key="FileChooserDialogImpl/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605458961010" />
     <state x="1629" y="2557" width="523" height="482" key="FileChooserDialogImpl/787.2160.2160.1440/0.0.3840.2160@787.2160.2160.1440" timestamp="1605306375038" />
     <state x="571" y="324" key="Github.ShareDialog" timestamp="1604528014426">
       <screen x="0" y="0" width="1440" height="848" />
     </state>
     <state x="571" y="324" key="Github.ShareDialog/0.0.1440.848@0.0.1440.848" timestamp="1604528014426" />
-    <state width="2086" height="534" key="GridCell.Tab.0.bottom" timestamp="1605389849902">
+    <state width="2086" height="534" key="GridCell.Tab.0.bottom" timestamp="1605914819455">
       <screen x="0" y="0" width="2160" height="1376" />
     </state>
     <state width="1416" height="209" key="GridCell.Tab.0.bottom/0.0.1440.848@0.0.1440.848" timestamp="1604792069573" />
-    <state width="2086" height="303" key="GridCell.Tab.0.bottom/0.0.2160.1376@0.0.2160.1376" timestamp="1605134499632" />
+    <state width="2086" height="534" key="GridCell.Tab.0.bottom/0.0.2160.1376@0.0.2160.1376" timestamp="1605914819455" />
     <state width="1896" height="286" key="GridCell.Tab.0.bottom/233.1182.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1603281034585" />
     <state width="2123" height="309" key="GridCell.Tab.0.bottom/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604918213070" />
     <state width="2086" height="534" key="GridCell.Tab.0.bottom/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605389849902" />
-    <state width="3766" height="531" key="GridCell.Tab.0.bottom/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605136169018" />
-    <state width="2086" height="534" key="GridCell.Tab.0.center" timestamp="1605389849902">
+    <state width="2086" height="534" key="GridCell.Tab.0.bottom/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605458962450" />
+    <state width="2086" height="534" key="GridCell.Tab.0.center" timestamp="1605914819454">
       <screen x="0" y="0" width="2160" height="1376" />
     </state>
     <state width="1416" height="209" key="GridCell.Tab.0.center/0.0.1440.848@0.0.1440.848" timestamp="1604792069572" />
-    <state width="2086" height="303" key="GridCell.Tab.0.center/0.0.2160.1376@0.0.2160.1376" timestamp="1605134499632" />
+    <state width="2086" height="534" key="GridCell.Tab.0.center/0.0.2160.1376@0.0.2160.1376" timestamp="1605914819454" />
     <state width="1896" height="286" key="GridCell.Tab.0.center/233.1182.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1603281034585" />
     <state width="2123" height="309" key="GridCell.Tab.0.center/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604918213069" />
     <state width="2086" height="534" key="GridCell.Tab.0.center/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605389849902" />
-    <state width="3766" height="531" key="GridCell.Tab.0.center/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605136169018" />
-    <state width="2086" height="534" key="GridCell.Tab.0.left" timestamp="1605389849901">
+    <state width="2086" height="534" key="GridCell.Tab.0.center/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605458962450" />
+    <state width="2086" height="534" key="GridCell.Tab.0.left" timestamp="1605914819453">
       <screen x="0" y="0" width="2160" height="1376" />
     </state>
     <state width="1416" height="209" key="GridCell.Tab.0.left/0.0.1440.848@0.0.1440.848" timestamp="1604792069572" />
-    <state width="2086" height="303" key="GridCell.Tab.0.left/0.0.2160.1376@0.0.2160.1376" timestamp="1605134499631" />
+    <state width="2086" height="534" key="GridCell.Tab.0.left/0.0.2160.1376@0.0.2160.1376" timestamp="1605914819453" />
     <state width="1896" height="286" key="GridCell.Tab.0.left/233.1182.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1603281034585" />
     <state width="2123" height="309" key="GridCell.Tab.0.left/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604918213069" />
     <state width="2086" height="534" key="GridCell.Tab.0.left/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605389849901" />
-    <state width="3766" height="531" key="GridCell.Tab.0.left/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605136169018" />
-    <state width="2086" height="534" key="GridCell.Tab.0.right" timestamp="1605389849902">
+    <state width="2086" height="534" key="GridCell.Tab.0.left/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605458962450" />
+    <state width="2086" height="534" key="GridCell.Tab.0.right" timestamp="1605914819454">
       <screen x="0" y="0" width="2160" height="1376" />
     </state>
     <state width="1416" height="209" key="GridCell.Tab.0.right/0.0.1440.848@0.0.1440.848" timestamp="1604792069572" />
-    <state width="2086" height="303" key="GridCell.Tab.0.right/0.0.2160.1376@0.0.2160.1376" timestamp="1605134499632" />
+    <state width="2086" height="534" key="GridCell.Tab.0.right/0.0.2160.1376@0.0.2160.1376" timestamp="1605914819454" />
     <state width="1896" height="286" key="GridCell.Tab.0.right/233.1182.1440.900/0.0.1920.1080@0.0.1920.1080" timestamp="1603281034585" />
     <state width="2123" height="309" key="GridCell.Tab.0.right/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604918213069" />
     <state width="2086" height="534" key="GridCell.Tab.0.right/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605389849902" />
-    <state width="3766" height="531" key="GridCell.Tab.0.right/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605136169018" />
+    <state width="2086" height="534" key="GridCell.Tab.0.right/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605458962450" />
     <state width="2123" height="653" key="GridCell.Tab.1.bottom" timestamp="1605009610052">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
@@ -385,10 +422,11 @@
     <state width="2123" height="431" key="GridCell.Tab.3.right/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604918213060" />
     <state width="2123" height="653" key="GridCell.Tab.3.right/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605009027997" />
     <state width="2123" height="653" key="GridCell.Tab.3.right/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605009610052" />
-    <state x="214" y="59" key="SettingsEditor" timestamp="1604619059942">
-      <screen x="0" y="0" width="1440" height="848" />
+    <state x="571" y="246" key="SettingsEditor" timestamp="1605960627912">
+      <screen x="0" y="0" width="3840" height="3536" />
     </state>
     <state x="214" y="59" key="SettingsEditor/0.0.1440.848@0.0.1440.848" timestamp="1604619059942" />
+    <state x="571" y="246" key="SettingsEditor/0.0.3840.3536@0.0.3840.3536" timestamp="1605960627912" />
     <state x="1120" y="294" key="Vcs.Push.Dialog.v2" timestamp="1605386910124">
       <screen x="0" y="0" width="3840" height="2160" />
     </state>
@@ -415,12 +453,12 @@
     <state x="616" y="44" width="928" height="1287" key="find.popup/0.0.2160.1376@0.0.2160.1376" timestamp="1605144687317" />
     <state x="616" y="44" width="928" height="1287" key="find.popup/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604874948169" />
     <state x="616" y="44" width="928" height="1287" key="find.popup/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605342218389" />
-    <state x="575" y="271" width="1009" height="1101" key="search.everywhere.popup" timestamp="1605388957187">
-      <screen x="0" y="0" width="2160" height="1376" />
+    <state x="1022" y="696" width="1794" height="2830" key="search.everywhere.popup" timestamp="1605960576205">
+      <screen x="0" y="0" width="3840" height="3536" />
     </state>
     <state x="383" y="168" width="672" height="678" key="search.everywhere.popup/0.0.1440.848@0.0.1440.848" timestamp="1604619050825" />
-    <state x="575" y="271" width="1009" height="1101" key="search.everywhere.popup/0.0.2160.1376@0.0.2160.1376" timestamp="1605144711954" />
-    <state x="1022" y="696" width="1794" height="2830" key="search.everywhere.popup/0.0.3840.3536@0.0.3840.3536" timestamp="1605201977839" />
+    <state x="575" y="271" width="1009" height="1101" key="search.everywhere.popup/0.0.2160.1376@0.0.2160.1376" timestamp="1605740908436" />
+    <state x="1022" y="696" width="1794" height="2830" key="search.everywhere.popup/0.0.3840.3536@0.0.3840.3536" timestamp="1605960576205" />
     <state x="575" y="271" width="1009" height="1101" key="search.everywhere.popup/775.2357.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1604915403902" />
     <state x="575" y="271" width="1009" height="1101" key="search.everywhere.popup/787.2160.2160.1440/0.0.2160.1376@0.0.2160.1376" timestamp="1605388957187" />
     <state x="1022" y="425" width="1794" height="1729" key="search.everywhere.popup/787.2160.2160.1440/0.0.3840.2160@0.0.3840.2160" timestamp="1605362638972" />
