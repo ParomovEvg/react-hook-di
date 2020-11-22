@@ -1,5 +1,5 @@
 import { Provider } from '../Provider/Provider';
-import { InjectionToken } from '..';
+import { InjectionToken, ModuleMetadata } from '..';
 
 export interface InjectionTokensContainer {
   getInjectionTokens(): InjectionToken[];
@@ -12,4 +12,8 @@ export interface ModulesContainer {
   getModules(): Module[];
 }
 
-export interface Module extends InjectionTokensContainer, ProvidersContainer, ModulesContainer {}
+export interface MetadataContainer {
+  getMetadata(): ModuleMetadata;
+}
+
+export interface Module extends InjectionTokensContainer, ProvidersContainer, ModulesContainer,MetadataContainer {}

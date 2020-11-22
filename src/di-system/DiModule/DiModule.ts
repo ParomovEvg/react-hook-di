@@ -8,14 +8,16 @@ import { ForwardReference } from '../../utils/types/forward-reference.type';
 import { ProviderFactoryImpl } from '../Provider/ProviderFacotry/ProviderFactoryImpl';
 import {
   InjectionTokensContainer,
+  MetadataContainer,
   Module,
   ModulesContainer,
   ProvidersContainer,
 } from './DiModule.interface';
 
-export class DiModule implements InjectionTokensContainer, ProvidersContainer, ModulesContainer {
+export class DiModule
+  implements InjectionTokensContainer, ProvidersContainer, ModulesContainer, MetadataContainer {
   constructor(
-    public readonly metadata: ModuleMetadata,
+    private readonly metadata: ModuleMetadata,
     private factory: ProviderFactory = new ProviderFactoryImpl(new MetadataService())
   ) {}
 
@@ -42,6 +44,10 @@ export class DiModule implements InjectionTokensContainer, ProvidersContainer, M
   getProvidersFlatt(): Provider[] {
     const providers = this.metadata.providers ?? [];
     return providers.map(provider => this.factory.create(provider));
+  }
+
+  getMetadata(): ModuleMetadata {
+    return this.metadata;
   }
 
   static unwrapModuleRef(moduleRef: ModuleRef): Module {

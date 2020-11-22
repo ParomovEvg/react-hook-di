@@ -4,7 +4,6 @@ import { Injectable } from '../decorators/injectable/injectable.decorator';
 import { renderHook } from '@testing-library/react-hooks';
 import { ResultBox } from 'value-box-ts';
 
-
 interface ILogger {
   log(v: string): void;
 }
@@ -21,6 +20,7 @@ class ConsoleLogger implements ILogger {
 }
 
 const utilityModule = configureModule({
+  name: 'utilityModule',
   providers: [FetchLogger, ConsoleLogger],
   providerExports: [FetchLogger, ConsoleLogger],
 });
@@ -33,6 +33,7 @@ class StoreService {
 }
 
 const storeModule = configureModule({
+  name: 'storeModule',
   imports: [utilityModule],
   providers: [
     {
@@ -52,6 +53,7 @@ class DomainService {
 }
 
 const domainModule = configureModule({
+  name: 'domainModule',
   imports: [storeModule],
   providers: [DomainService],
 });

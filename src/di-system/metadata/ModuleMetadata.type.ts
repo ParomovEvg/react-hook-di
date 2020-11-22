@@ -7,4 +7,5 @@ export interface ModuleMetadata {
   providers?: ProviderMetadata[];
   providerExports?: Array<InjectionToken>;
   moduleReExports?: Array<ModuleRef>;
+  name: string;
 }

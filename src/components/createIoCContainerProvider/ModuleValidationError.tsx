@@ -1,8 +1,8 @@
-import { AbstractModuleValidationError } from '../../ModuleValidation/AbstractModuleValidationError';
+import { ValidationError } from '../../module-validation/ValidationError';
 import React from 'react';
 
 interface ModuleValidationErrorProps {
-  error: AbstractModuleValidationError;
+  error: ValidationError;
 }
 
 export const ModuleValidationError: React.FC<ModuleValidationErrorProps> = p => {
